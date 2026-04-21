@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyril P Jose | Futuristic Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tactical Noise Texture -->
+    <div class="noise-overlay"></div>
+
+    <!-- Vanta 3D Background Container -->
+    <div id="vanta-bg"></div>
+
+    <!-- Custom Glowing Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-inner"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo"><span>CPJ</span><span></span></a>
+<span></span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="assets/resume.jpg" download="Ashik_Madhu_Resume.jpg" class="nav-resume"><i class="fas fa-file-download"></i> Resume</a>
+                <a href="#contact" class="btn-primary" style="padding: 10px 20px; font-size: 14px;">Work info</a>
+                <!-- Admin Access Icon -->
+                <a href="javascript:void(0)" onclick="handleAdminRouting()" class="admin-profile" data-tooltip="Admin Access">
+                    <img src="profile.jpg" alt="Admin" onerror="this.src='https://via.placeholder.com/150';">
+                </a>
+            </div>
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/resume.jpg" download="Ashik_Madhu_Resume.jpg"><i class="fas fa-file-download"></i> Resume</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section-reveal">
+            <div class="container container-hero">
+                <div class="hero-content">
+                    <span class="label-top">WELCOME</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <br>
+                        <span class="gradient-text">Cyril P Jose.</span>
+                    </h1>
+                    <div class="typing-container">
+                        <p id="typing-text" data-default="Developer | Problem Solver | Learner"></p>
+                        <span class="cursor-typing">|</span>
+                    </div>
+                    <p class="hero-desc">
+                        Curiosity-driven developer passionate about building real-world projects and learning new technologies to solve complex problems.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn-primary">Get in Touch</a>
+                        <a href="assets/resume.jpg" download="Ashik_Madhu_Resume.jpg" class="btn-secondary"><i class="fas fa-file-download"></i> Download Resume</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/cyril-p-jose/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ashik-madhu/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:cyrilpjose2025@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <!-- Profile Image Frame -->
+                <div class="hero-visual">
+                    <div class="glow-ring ping"></div>
+                    <div class="glow-ring pulse"></div>
+                    <div class="profile-frame">
+                        <div class="profile-inner">
+                            <img src="profile.jpg" alt="Cyril P Jose" onerror="this.src='https://via.placeholder.com/400';">
+                        </div>
+                        <div class="float-tag tag-top">B.Tech CS Student</div>
+                        <div class="float-tag tag-bottom">Developer</div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <span>SCROLL</span>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-reveal">
+            <div class="container grid-2">
+                <div class="about-visual">
+                    <div class="about-glow"></div>
+                    <div class="about-frame glass">
+                        <img src="assets/images/about_feather.jpg" alt="Workspace" onerror="this.src='https://via.placeholder.com/500';">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="label-orange">STORY</span>
+                    <h2>A bit about <span class="gradient-text">me.</span></h2>
+                    <p id="about-text-content" class="text-dim">I am a B.Tech Computer Science student driven by curiosity and a passion for building real-world projects. I love exploring new technologies, solving problems, and creating impactful software solutions that make a difference.</p>
+                    <p class="text-dim">When I'm not coding, you'll find me learning about the latest tech trends and contributing to the developer community. I believe in clean code, user-centered design, and the power of collaborative problem-solving.</p>
+                    <div class="about-tags scroll-animate">
+                        <div class="about-tag glass"><i class="fas fa-user-check"></i> <span>Passion</span></div>
+                        <div class="about-tag glass"><i class="fas fa-code"></i> <span>Coding</span></div>
+                        <div class="about-tag glass"><i class="fas fa-palette"></i> <span>UI/UX</span></div>
+                        <div class="about-tag glass"><i class="fas fa-laptop-code"></i> <span>Building</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-reveal">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="label-orange">EXPERTISE</span>
+                    <h2>What I <span class="gradient-text">work</span> with.</h2>
+                </div>
+                <div id="skills-grid" class="skills-grid">
+                    <div class="skill-category glass">
+                        <h3>Interests &amp; Languages</h3>
+                        <div class="skill-items-icons">
+                            <div class="skill-item-icon" title="Python">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item-icon" title="HTML">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-item-icon" title="CSS">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-item-icon" title="C">
+                                <i class="fas fa-code"></i>
+                                <span>C</span>
+                            </div>
+                            <div class="skill-item-icon" title="C++">
+                                <i class="fas fa-file-code"></i>
+                                <span>Java</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category glass">
+                        <h3>Creative Tools</h3>
+                        <div class="skill-items-icons">
+                            <div class="skill-item-icon" title="Figma">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item-icon" title="UI/UX">
+                                <i class="fas fa-magic"></i>
+                                <span>Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-reveal">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="label-orange">PORTFOLIO</span>
+                    <h2>Some things I've <span class="gradient-text">worked</span> on.</h2>
+                </div>
+                <div id="projects-grid" class="projects-grid">
+                    <div class="project-card glass" onclick="window.open('https://cyril-p-jose.github.io/RoamBuddy/', '_blank')">
+                        <div class="project-image">
+                            <img src="assets/images/travel_guide.png" alt="Travel Guide" onerror="this.src='https://via.placeholder.com/500x300';">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <h3>Travel Guide</h3>
+                            <p class="text-dim text-sm">A comprehensive travel companion app designed for explorers to find the best locations.</p>
+                            <div class="project-footer">
+                                <div><a href="https://cyril-p-jose.github.io/RoamBuddy/" target="_blank" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i></a></div>
+                                <span class="read-more">DETAILS &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-reveal">
+            <div class="container grid-2">
+                <div class="contact-form glass">
+                    <div class="section-title">
+                        <span class="label-orange">SAY HELLO 👋</span>
+                        <h2>Contact <span class="gradient-text">me.</span></h2>
+                    </div>
+                    <form id="portfolio-contact">
+                        <div class="form-group">
+                            <label for="user_name">Name</label>
+                            <input type="text" id="user_name" name="user_name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_email">Email</label>
+                            <input type="email" id="user_email" name="user_email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" id="contact-submit" class="btn-primary w-full" style="justify-content: center; width: 100%;">
+                            <span class="btn-text" id="contact-btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p class="text-dim">Whether you have a project idea, want to collaborate, or just want to say hello — I'd love to hear from you. Drop me a message and I'll get back to you as soon as possible.</p>
+                    <div class="contact-cards">
+                        <a href="mailto:cyrilpjose2025@gmail.com" class="contact-card glass">
+                            <div class="card-icon icon-orange"><i class="fas fa-envelope"></i></div>
+                            <div class="card-text">
+                                <span>EMAIL</span>
+                                <p>cyrilpjose2025@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/cyril-p-jose/" target="_blank" class="contact-card glass">
+                            <div class="card-icon icon-green"><i class="fab fa-github"></i></div>
+                            <div class="card-text">
+                                <span>GITHUB</span>
+                                <p>CYRIL P JOSE</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/cyril-p-jose/" target="_blank" class="contact-card glass">
+                            <div class="card-icon icon-orange"><i class="fab fa-linkedin"></i></div>
+                            <div class="card-text">
+                                <span>LINKEDIN</span>
+                                <p>Cyril P Jose</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-content">
+            <h2 class="logo"><span>A</span><span>M</span></h2>
+            <p class="text-dim">&copy; <span id="year"></span> Cyril P Jose. Designed with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content glass">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-inner"></div>
+        </div>
+    </div>
+
+    <!-- Floating Contact Bar -->
+    <div class="floating-contact-wrapper">
+        <div class="marquee-track">
+            <!-- Set 1 -->
+            <a href="https://github.com/cyril-p-jose/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/cyril-p-jose/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:cyrilpjose2025@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <!-- Set 2 -->
+            <a href="https://github.com/cyril-p-jose/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/cyril-p-jose/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:cyril-p-jose2025@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Three.js and Vanta.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
